@@ -2,11 +2,8 @@
   "name": "url-shorter",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd app&ng serve",
-    "build": "cd app&ng build"
+    "start": "cd app && npm install && ng serve",
+    "build": "cd app && npm install && ng build"
   },
-  "private": true,
-  "dependencies": {
-    "@angular/cli": "^8.0.6"
-  }
+  "private": true
 }
