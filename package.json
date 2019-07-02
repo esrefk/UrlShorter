@@ -5,5 +5,8 @@
     "start": "cd app&ng serve",
     "build": "cd app&ng build"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@angular/cli": "^8.0.6"
+  }
 }
