@@ -23,12 +23,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  <Target Name="PrePublishTarget" BeforeTargets="PrepareForPublish" Condition="$(DOTNET_RUNNING_IN_CONTAINER) != 'true'">
-    <Exec Command="npm install" />
-    <Exec Command="npm run build" />
-    <ItemGroup>
-      <Dist Include="../../build/**" />
-    </ItemGroup>
-    <Copy SourceFiles="@(Dist)" DestinationFolder="$(PublishDir)\wwwroot\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  <Target Name="BeforeBuild" BeforeTargets="BeforeBuild">
+    <Exec Command="cd app"></Exec>
+    <Exec Command="npm install"></Exec>
   </Target>
 </Project>
