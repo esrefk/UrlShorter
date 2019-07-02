@@ -2,8 +2,20 @@
   "name": "url-shorter",
   "version": "1.0.0",
   "scripts": {
+    "ng": "ng",
     "start": "cd app&npm install&ng serve",
     "build": "cd app&npm install&ng build"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.800.0",
+    "@angular/cli": "~8.0.4",
+    "@angular/compiler-cli": "~8.0.1",
+    "@angular/language-service": "~8.0.1",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.4.3"
+  }
 }
