@@ -1,0 +1,14 @@
+{
+  "name": "HKURlShorter",
+  "description": "Hangikredi url shorter demo app",
+  "repository": "https://github.com/esrefk/UrlShorter",
+  "keywords": ["aspnet", "core"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/jincod/dotnetcore-buildpack"
+    }
+  ]
+}
